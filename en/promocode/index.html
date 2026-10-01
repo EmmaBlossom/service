@@ -24,6 +24,19 @@
 .promo{width:100%;border:1px solid #cfe4f0;background:#f4fbfe;padding:13px 14px;display:flex;align-items:center;gap:10px;font:inherit;text-align:left;cursor:pointer;color:#4b5963;transition:.16s}.promo:hover,.promo:focus-visible{background:#e7f5fc;border-color:#8fc8e5;outline:none;box-shadow:0 0 0 2px rgba(23,134,200,.06)}.promo strong{color:var(--blue);font-size:16px}.promo-text{flex:1}.icon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;flex:0 0 32px;border:1px solid #b9d9ea;background:#fff;color:var(--blue);border-radius:4px}.icon svg{width:16px;height:16px}.check{display:none}.promo.is-copied{background:#eef9f3;border-color:#9ed0b6}.promo.is-copied .copy{display:none}.promo.is-copied .check{display:block}.promo.is-copied .icon{color:var(--green);border-color:#9ed0b6}
 .section{margin-top:12px;background:#fff;border:1px solid var(--line);padding:16px}.section h2{font-size:17px;margin:0 0 10px}.section ul,.section ol{margin:7px 0 0 20px;padding:0}.section li{margin:5px 0}.back{display:inline-block;margin-top:12px;font-weight:700}
 @media(max-width:720px){.page{margin:4px auto 12px;padding:0 4px}.breadcrumbs{font-size:10px;margin-bottom:4px}.card,.section{padding:12px;border-left:0;border-right:0}h1{font-size:22px}.promo{padding:10px;font-size:12px}.promo strong{font-size:14px}}
+
+/* Breadcrumbs: horizontal scroll without visible scrollbar */
+.breadcrumbs{
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+}
+.breadcrumbs::-webkit-scrollbar{
+  display:none;
+  width:0;
+  height:0;
+}
+
 </style>
 </head>
 <body>
